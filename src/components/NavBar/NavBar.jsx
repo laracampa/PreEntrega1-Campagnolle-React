@@ -3,7 +3,6 @@ import CartWidget from '../CartWidget/CartWidget'
 import Logo from '../Logo/Logo'
 
 const NavBar = () => {
-    const logo = "./img/koko.png";
     return (
         <header>
             <Logo/>
