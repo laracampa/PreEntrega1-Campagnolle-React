@@ -1,14 +1,15 @@
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import Logo from '../Logo/Logo'
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <header>
-            <Logo/>
+            <Link to={"/"}><Logo/></Link>
             <nav>
                 <ul>
-                    <li>Inicio</li>
+                    <li> <NavLink to={"/"}>Inicio</NavLink></li>
                     <li>Menú</li>
                     <li>Contacto</li>
                     <li>Nosotros</li>
