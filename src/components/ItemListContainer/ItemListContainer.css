@@ -1,5 +1,11 @@
 .titulo {
     text-align: center;
     padding-top: 40px;
-    font-size: 90px;
+    font-size: 80px;
+}
+
+.subtitulo {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 60px;
 }

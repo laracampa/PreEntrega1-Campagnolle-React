@@ -6,7 +6,7 @@ import { NavLink, Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <header>
-            <Link to={"/"}><Logo/></Link>
+            <Link to={"/"}> <Logo/> </Link>
             <nav>
                 <ul>
                     <li> <NavLink to={"/"}>Inicio</NavLink></li>
