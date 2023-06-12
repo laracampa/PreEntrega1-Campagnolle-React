@@ -1,0 +1,18 @@
+.checkout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.checkoutNombre { grid-area: 1}
+.checkoutPrecio { grid-area: 2 } 
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+label { grid-area: 1 }
+input { grid-area: 2 } 

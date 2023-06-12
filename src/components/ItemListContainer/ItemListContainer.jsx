@@ -1,9 +1,9 @@
 import './ItemListContainer.css'
 import {useState, useEffect} from 'react'
 import ItemList from '../ItemList/ItemList'
-import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where} from "firebase/firestore"
 import { db } from "../../services/config"
+import { useParams, Link } from 'react-router-dom'
 
 const ItemListContainer = (props) => {
         const [productos, setProductos] = useState([]);
@@ -27,7 +27,11 @@ const ItemListContainer = (props) => {
     return (
         <div>
             <h1 className='titulo'>¡Bienvenido/a!</h1>
-            <h2 className='subtitulo'>A continuación podrá ver nuestra selección de tortas</h2>
+            <h2 className='subtitulo'>¿Qué desea?</h2>
+            <div className='opciones'>
+                <Link to={"/categoria/tortas"} className='categoria'>Tortas</Link>
+                <Link to={"/categoria/huevos"} className='categoria'>Huevos</Link>
+            </div>
             <ItemList productos={productos} />
         </div>
     )

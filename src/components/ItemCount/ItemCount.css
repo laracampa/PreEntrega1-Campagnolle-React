@@ -5,7 +5,19 @@ button {
     font-size: x-large;
     font-weight: 900;
     border-radius: 15px;
-    padding: 3% 8%;
+    padding: 3% 3%;
     box-shadow: none;
     cursor: pointer;
+}
+
+p{
+    padding: 0% 3%;
+}
+
+.contador {
+    display: block ruby;
+}
+
+.agregar{
+    padding: 2% 22%;
 }

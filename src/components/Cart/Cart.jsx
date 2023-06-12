@@ -2,27 +2,30 @@ import { Link } from "react-router-dom"
 import { useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import CartItem from "../CartItem/CartItem"
+import './Cart.css'
 
 const Cart = () => {
-    const { carrito, vaciarCarrito } = useContext(CarritoContext);
-    const totalCantidad = carrito.reduce((total, producto) => total + producto.cantidad, 0);
-    const total = carrito.reduce((total, producto) => total + (producto.item.precio * producto.cantidad), 0);
+    const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
 
-    if (totalCantidad === 0){
+    if (cantidadTotal === 0){
         return (
-            <>
-            <h2>No hay productos en el carrito</h2>
-            <Link to='/'> Seguir comprando </Link>
-            </>
+            <div className="carritoVacio">
+                <h2>No hay productos en el carrito.</h2>
+                <Link to='/' className="button"> Seguir comprando. </Link>
+            </div>
             )
         }
         return (
             <div>
                 {carrito.map(producto=> <CartItem key={producto.id} {...producto}/>)}
-                <h3>Cantidad total: {totalCantidad}</h3>
-                <h3>Total: $ {total}</h3>
-                <button onClick={()=> vaciarCarrito()}>Vaciar Carrito</button>
-                <Link to='/checkout'>Finalizar Compra</Link>
+                <div className="carritoTotal">
+                    <h3>Cantidad total: {cantidadTotal}</h3>
+                    <h3>Total: $ {total}</h3>
+                </div>
+                <div className="carritoBotones">
+                <button onClick={()=> vaciarCarrito()} className="button">Vaciar Carrito</button>
+                <Link to='/checkout' className="button">Finalizar Compra</Link>
+                </div>
             </div>
         )
 }

@@ -6,7 +6,7 @@ const ItemCount = ({inicial, stock, funcionAgregar}) =>{
     const [contador, setContador] = useState(inicial);
     const incrementar = () => {
         if (contador < stock) {
-            setContador (contador + inicial);
+            setContador (contador + 1);
         }
     }
     const decrementar = () => {
@@ -17,12 +17,12 @@ const ItemCount = ({inicial, stock, funcionAgregar}) =>{
 
     return (
         <>
-            <div>
+            <div className='contador'>
                 <button onClick = {decrementar}> - </button>
                 <p> {contador} </p>
                 <button onClick = {incrementar}> + </button>
             </div>
-            <button onClick = {() => funcionAgregar(contador)}> Agregar al carrito </button>
+            <button className='agregar' onClick = {() => funcionAgregar(contador)}> Agregar al carrito </button>
         </>
     )
 }

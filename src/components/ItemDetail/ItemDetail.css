@@ -16,3 +16,13 @@ button{
     box-shadow: none;
     cursor: pointer;
 }
+
+.button{
+    background-color: rgba(51, 127, 89, 0.695);
+    font-size: xx-large;
+    font-weight: 900;
+    border-radius: 15px; 
+    padding: 1% 3%;
+    box-shadow: none;
+    cursor: pointer;
+}

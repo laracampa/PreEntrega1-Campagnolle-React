@@ -15,7 +15,8 @@
     font-size: x-large;
     font-weight: 900;
     border-radius: 15px; 
-    padding: 3% 8%;
+    margin: 10px;
+    display: block;
     box-shadow: none;
     cursor: pointer;
 }

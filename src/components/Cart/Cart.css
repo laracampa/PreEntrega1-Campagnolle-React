@@ -1,0 +1,44 @@
+.button {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(51, 127, 89, 0.695);
+    font-size: x-large;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 3% 3%;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.carritoVacio {
+    text-align: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 300px;
+}
+
+h2 {
+    padding: 10%;
+}
+
+.carritoTotal {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.carritoBotones {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+h3 {
+    font-size: 30px;
+}
