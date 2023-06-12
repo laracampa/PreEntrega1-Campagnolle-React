@@ -5,3 +5,10 @@
 strong{
     font-size: small;
 }
+span{
+    color: black;
+    font-size: medium;
+}
+.span{
+    text-decoration: none;
+}

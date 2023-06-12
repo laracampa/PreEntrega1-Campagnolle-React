@@ -18,10 +18,6 @@
     gap: 300px;
 }
 
-h2 {
-    padding: 10%;
-}
-
 .carritoTotal {
     text-align: center;
     display: flex;

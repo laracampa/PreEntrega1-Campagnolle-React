@@ -1,18 +1,31 @@
 .checkout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: block ruby;
 }
-
-.checkoutNombre { grid-area: 1}
-.checkoutPrecio { grid-area: 2 } 
-
-.form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+.checkoutNombre {
+    width: 50%;
+    margin-left: 30%;
 }
-label { grid-area: 1 }
-input { grid-area: 2 } 
+.checkoutPrecio { 
+    width: 50%;
+    margin-left: -30%;
+} 
+h1 { 
+    margin: 30px;
+    font-size: 50px;
+} 
+
+input { 
+    margin: 1% 10%;
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
+} 
+
+.buttonFinalizar { 
+    margin-left: 70%;
+} 
+
+strong { 
+    margin: 30px;
+    font-size: 50px;
+} 
