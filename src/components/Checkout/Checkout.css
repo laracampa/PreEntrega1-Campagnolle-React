@@ -9,6 +9,11 @@
     width: 50%;
     margin-left: -30%;
 } 
+
+.totalCheckout{
+    text-align: center;
+}
+
 h1 { 
     margin: 30px;
     font-size: 50px;

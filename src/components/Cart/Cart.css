@@ -18,6 +18,10 @@
     gap: 300px;
 }
 
+.vacioCarrito {
+    margin: 90px;
+}
+
 .carritoTotal {
     text-align: center;
     display: flex;
