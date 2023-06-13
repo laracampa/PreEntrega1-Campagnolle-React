@@ -17,7 +17,7 @@ const Checkout = () => {
     const manejadorSubmit = (event) =>{
         event.preventDefault();
         if(!nombre || !apellido || !celular || !email || !emailConfirmacion){
-            setError("Por favor complete todos la información.");
+            setError("Por favor complete toda la información.");
             return;
         }
         if(email !== emailConfirmacion){
